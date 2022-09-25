@@ -9,6 +9,8 @@ all_files = glob.glob(folder_path+"/*")
 # how many possible port number and associated network services?
 for file in all_files:
     print(file)
+# extract port number, add it to set and see what we have
+
 # for each port number, figure out the number of files, count of each and aggregate to avg count
 
 # trend should be reserved for graph phase.
