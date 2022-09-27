@@ -18,6 +18,6 @@ def get_protocol_type_from_filepath(file_path):
     hi_protocol = 'TBA'
     if 'tcp' in file_path:
         hi_protocol = 'TCP'
-    else:
+    if 'udp' in file_path:
         hi_protocol = 'UDP'
     return hi_protocol
