@@ -10,7 +10,7 @@ def get_port_number_from_filepath(file_path):
 
 
 def get_date_from_filepath(file_path):
-    match_date = (re.search(regex_date,file_path)).group()
+    match_date = (re.search(regex_date, file_path)).group()
     return match_date
 
 
@@ -21,3 +21,10 @@ def get_protocol_type_from_filepath(file_path):
     if 'udp' in file_path:
         hi_protocol = 'UDP'
     return hi_protocol
+
+
+def get_jaccard_index(set1, set2):
+    intersected_ips = set1.intersection(set2)
+    union_ips = set1.union(set2)
+    the_index = len(intersected_ips) / len(union_ips)
+    return the_index

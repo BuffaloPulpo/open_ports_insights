@@ -13,13 +13,13 @@ dirs = os.listdir(folder_path)
 all_files = glob.glob(folder_path+"/*")
 # how many possible port number and associated network services?
 list_of_port_numbers = list()
-for file in all_files:
-    port_number = get_port_number_from_filepath(file)
-    if 'udp' not in file:
-        list_of_port_numbers.append(port_number)
-print(list_of_port_numbers)
-data = pd.Series(list_of_port_numbers)
-print(data.value_counts())
+# for file in all_files:
+#     port_number = get_port_number_from_filepath(file)
+#     if 'udp' not in file:
+#         list_of_port_numbers.append(port_number)
+# print(list_of_port_numbers)
+# data = pd.Series(list_of_port_numbers)
+# print(data.value_counts())
 # extract port number, add it to set and see what we have
 
 # for each port number, figure out the number of files, count of each and aggregate to avg count
